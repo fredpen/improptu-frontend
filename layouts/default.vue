@@ -1,14 +1,15 @@
 <template>
     <v-app>
-        <!-- <v-navigation-drawer
+        <v-navigation-drawer
             v-model="drawer"
             :mini-variant="miniVariant"
             :clipped="clipped"
+            disable-resize-watcher="true"
             fixed
             app
         >
             apps goes here
-        </v-navigation-drawer> -->
+        </v-navigation-drawer>
 
         <v-app-bar :clipped-left="clipped" fixed app my-4>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -38,8 +39,8 @@
         </v-app-bar>
 
         <!-- application goes here -->
-        <v-content>
-            <v-container style="max-width:1500px">
+        <v-content class="mb30">
+            <v-container fluid>
                 <nuxt />
             </v-container>
         </v-content>
@@ -68,8 +69,10 @@
 
 <script>
 import auth from "../components/auth.vue";
+import baseMixins from '../plugins/utilities/baseMixin.vue'
 
 export default {
+    mixins : [ baseMixins ],
     components: { auth },
     data() {
         return {
@@ -93,6 +96,15 @@ export default {
             rightDrawer: false,
             title: "Impromptu-Tasks"
         };
-    }
+    },
+
+    
 };
 </script>
+
+
+<style scoped>
+    .mb30 {
+        margin-bottom: 30px;
+    }
+</style>

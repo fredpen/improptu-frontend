@@ -1,9 +1,14 @@
 export const state = () => ({
-    counter: 0
+    user: '',
 })
 
 export const mutations = {
-    increment (state) {
-        state.counter++
-    }
+    setUser(state, user) {
+        if (process.client) {
+            localStorage.setItem('user', JSON.stringify(user));
+            return state.user = user;
+        }
+        
+       
+    },
 }

@@ -1,7 +1,7 @@
 <template>
         <v-row fluid align="center" justify="center">
             <v-col cols="11" class="mt-12">
-
+                {{ user.name }} goes here
                 <!-- login -->
                 <template  v-if="isLogin" >
                     <v-card class="elevatsion-12">
@@ -27,7 +27,7 @@
                         </v-card-text>
                         <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="primary">Login</v-btn>
+                            <v-btn @click="setUser" color="primary">Login</v-btn>
                         </v-card-actions>
 
                     
@@ -95,17 +95,17 @@ export default {
     },
 
     methods: {
-        // addTodo(e) {
-        //     this.$store.commit("bobo/add", e.target.value);
-        //     e.target.value = "";
-        // },
+        setUser() {
+            let user = {name: 'fred', sex : 'male'};
+            this.$store.commit("auth/setUser", user);
+        },
         // ...mapMutations({
         //     toggle: "todo/toggles" // todo is the modules/toggles is the methodname in store
         // })
     },
 
     computed: {
-        // todos() { return this.$store.state.todo.list },
+        user() { return this.$store.state.auth.user },
         // todos() {
         //     return this.$store.state.bobo.list;
         // }
