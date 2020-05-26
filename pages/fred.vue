@@ -1,15 +1,11 @@
 <template>
-    <v-layout column justify-center align-center>
-        <v-flex xs12 sm8 md6>
-            <v-card>
-                <v-card-title primary color="primary" class="headline">
-                    Welcome to the fred pageo
-                </v-card-title>
+  <v-layout column justify-center align-center>
+    <v-flex xs12 sm8 md6>
+      <v-card>
+        <v-card-title primary color="primary" class="headline">Welcome to the fred pageo</v-card-title>
 
-                   <v-btn color="primary" nuxt to="/inspire">
-                        Continue
-                    </v-btn>
-                <!-- <v-card-text>
+        <v-btn color="primary" nuxt to="/inspire">Continue</v-btn>
+        <!-- <v-card-text>
                     <p>
                         Vuetify is a progressive Material Design component
                         framework for Vue.js. It was designed to empower
@@ -62,20 +58,14 @@
                     <v-btn color="primary" nuxt to="/inspire">
                         Continue
                     </v-btn>
-                </v-card-actions> -->
-            </v-card>
-        </v-flex>
-    </v-layout>
+        </v-card-actions>-->
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
-
 export default {
-    components: {
-        Logo,
-        VuetifyLogo
-    }
+  components: {}
 };
 </script>

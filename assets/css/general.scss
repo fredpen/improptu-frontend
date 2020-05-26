@@ -1,0 +1,16 @@
+.best-sellers-box {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.062);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+
+    &:hover .best-sellers-details-top {
+        display: block;
+    }
+}

@@ -29,7 +29,12 @@ export default {
     /*
      ** Global CSS
      */
-    css: [],
+    css: [
+        // CSS file in the project
+        "@/assets/css/general.css",
+        // SCSS file in the project
+        "@/assets/css/general.scss"
+    ],
     /*
      ** Plugins to load before mounting the App
      */
@@ -52,11 +57,10 @@ export default {
             light: true,
             themes: {
                 light: {
-                    // primary: colors.pink.darken2,
-                    primary: '#d9138a',
+                    primary: "#d9138a",
                     accent: colors.grey.darken3,
                     secondary: colors.amber.darken3,
-                    info: '12a4d9',
+                    info: "12a4d9",
                     warning: colors.amber.base,
                     error: colors.deepOrange.accent4,
                     success: colors.green.accent3

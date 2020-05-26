@@ -1,0 +1,12 @@
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}

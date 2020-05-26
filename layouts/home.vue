@@ -1,20 +1,24 @@
 <template>
   <v-app>
-    <!-- <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      :disable-resize-watcher="true"
-      fixed
-      app
-    >apps goes here</v-navigation-drawer>-->
-
     <myHeader />
+
+    <v-card width="100%" max-height="25%">
+      <v-img class="white--text align-end" height="100%" src="/back.jpg">
+        <v-card-text class="text--white">
+          <div>Whitehaven Beach</div>
+
+          <div>Whitsunday Island, Whitsunday Islands</div>
+          <v-card-actions>
+            <v-btn large dark color="primary" text>Get started</v-btn>
+          </v-card-actions>
+        </v-card-text>
+      </v-img>
+    </v-card>
 
     <loadingGlare v-show="loadingGlare" />
 
     <!-- application goes here -->
-    <v-content class="mb30">
+    <v-content>
       <v-container fluid>
         <nuxt></nuxt>
       </v-container>
@@ -51,4 +55,8 @@ export default {
 
 
 <style scoped>
+.banner {
+  min-width: 100%;
+  min-height: 50%;
+}
 </style>
