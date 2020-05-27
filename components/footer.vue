@@ -1,6 +1,6 @@
 <template>
   <!-- <v-row> -->
-  <v-footer max-height="300px" dark min-width="100%">
+  <v-footer min-height="300px" dark min-width="100%">
     <!-- subscribe -->
     <v-col cols="12" sm="6" md="6">
       <h3 class="mb-4 text-uppercase font-weight-light">Subscription</h3>

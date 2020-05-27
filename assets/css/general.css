@@ -10,3 +10,12 @@ a {
 .mb30 {
     margin-bottom: 30px;
 }
+
+.textPrimary {
+    color: #d9138a;
+}
+
+.myCenter {
+    display: block;
+    margin: 0 auto;
+}

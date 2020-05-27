@@ -51,6 +51,11 @@ export default {
           icon: "mdi-chart-bubble",
           title: "Jobs",
           to: "/tasks"
+        },
+        {
+          icon: "mdi-chart-bubble",
+          title: "Dashboard",
+          to: "/dashboard"
         }
       ]
     };

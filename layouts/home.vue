@@ -2,24 +2,23 @@
   <v-app>
     <myHeader />
 
-    <v-card width="100%" max-height="25%">
-      <v-img class="white--text align-end" height="100%" src="/back.jpg">
-        <v-card-text class="text--white">
-          <div>Whitehaven Beach</div>
-
-          <div>Whitsunday Island, Whitsunday Islands</div>
-          <v-card-actions>
-            <v-btn large dark color="primary" text>Get started</v-btn>
-          </v-card-actions>
-        </v-card-text>
-      </v-img>
-    </v-card>
+    <v-parallax dark src="/back.jpg" alt="Welcome to Impromptu Tasks">
+      <v-row align="center" justify="center">
+        <v-col class="text-center" cols="12">
+          <h1 class="display-1 font-weight-bold mb-4">Impromptu Tasks</h1>
+          <h4 class="subheading">let us make you more productive</h4>
+          <v-btn style="display:blcock" large class="my-8 myCenter" outlined center color="white">
+            <NuxtLink to="/">Get Started</NuxtLink>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-parallax>
 
     <loadingGlare v-show="loadingGlare" />
 
     <!-- application goes here -->
-    <v-content>
-      <v-container fluid>
+    <v-content class="pt-5">
+      <v-container>
         <nuxt></nuxt>
       </v-container>
     </v-content>
