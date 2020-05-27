@@ -2,9 +2,9 @@
   <v-sheet width="100%" elevation="1" class="d-flex" color="transparent" height="100vh">
     <v-row>
       <!-- <v-col cols="12"> -->
-      <v-avatar class="mx-auto my-3">
+      <!-- <v-avatar class="mx-auto my-3">
         <img src="/test2.jpeg" alt="John" />
-      </v-avatar>
+      </v-avatar>-->
       <!-- </v-col> -->
 
       <!-- <v-flex> -->
